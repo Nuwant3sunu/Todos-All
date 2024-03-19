@@ -19,7 +19,7 @@ class Todos {
 
             .then((response) => response.json())    
             .then((json) => {
-                this.#readJson(json);
+                this.#readJson(json.result);
                 resolve(this.#tasks);
             }, (error) => {
                 reject(error);

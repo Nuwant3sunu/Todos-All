@@ -14,7 +14,7 @@ app.get("/", (req,res)=>{
         if (error) {
             res.status(500).json({error : error.message});
         }
-        res.status(200).json(result.rows);
+        res.status(200).json({result: result.rows});
 
     })
     
